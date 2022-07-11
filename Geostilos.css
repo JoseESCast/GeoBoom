@@ -1,0 +1,51 @@
+/*Centrar el titulo*/
+.center {
+    text-align: center;
+    font-size: 70px;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+/*Para posicionar el apartado personaliza tu tirador*/
+.limon {
+    position:absolute; /*Determina relación con la esquina superior izquierda de la ventana del navegador.*/
+    left: 150px; /* Las coordenadas de un punto se expresan entonces de arriba a abajo (top) y de izquierda a derecha (left).*/
+    /*https://es.ccm.net/contents/157-como-posicionar-elementos-en-css*/
+}
+
+/*Color de fondo*/
+body {
+    background-color: #262626;
+}
+
+/*Animacion del titulo*/
+#anim {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+/*Centrar inputs*/
+#inp {
+    text-align: center;
+}
+
+/*Para manipular los botones circulares*/
+.btn-circle.btn-xl {
+    width: 200px;
+    height: 75px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+/*Lo que le hace que cambie de color el texto del titulo*/
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
